@@ -1,5 +1,3 @@
-with Ada.Numerics.Elementary_Functions;
-
 package Block_Truncation_Coding is
    
    -- We use a Mod type to enforce valid 8-bit Grayscale values strictly.
