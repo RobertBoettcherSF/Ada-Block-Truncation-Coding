@@ -5,10 +5,10 @@ with Block_Truncation_Coding; use Block_Truncation_Coding;
 procedure Tests is
    
    -- Helper Data Setup
-   Uniform_Block   : Block_4x4 := (others => (others => 100));
-   Two_Tone_Block  : Block_4x4 := (1..2 => (others => 50), 3..4 => (others => 150));
+   Uniform_Block   : constant Block_4x4 := (others => (others => 100));
+   Two_Tone_Block  : constant Block_4x4 := (1..2 => (others => 50), 3..4 => (others => 150));
    Outlier_Block   : Block_4x4 := (others => (others => 10));
-   Max_Var_Block   : Block_4x4 := (1..2 => (others => 0), 3..4 => (others => 255));
+   Max_Var_Block   : constant Block_4x4 := (1..2 => (others => 0), 3..4 => (others => 255));
    
    Encoded_Result  : BTC_Encoded_Block;
    Decoded_Result  : Block_4x4;
